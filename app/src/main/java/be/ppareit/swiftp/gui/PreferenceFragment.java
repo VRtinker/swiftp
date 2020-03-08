@@ -263,16 +263,6 @@ public class PreferenceFragment
             return true;
         });
 
-        val showNotificationIconPref = findPref("show_notification_icon_preference");
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            val appearanceScreen = (PreferenceScreen) findPreference("appearance_screen");
-            appearanceScreen.removePreference(showNotificationIconPref);
-        }
-        showNotificationIconPref.setOnPreferenceChangeListener((preference, newValue) -> {
-            FsService.stop();
-            return true;
-        });
-
         Preference helpPref = findPref("help");
         helpPref.setOnPreferenceClickListener(preference -> {
             Cat.v("On preference help clicked");

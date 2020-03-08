@@ -23,7 +23,6 @@ import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
-import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
@@ -85,9 +84,6 @@ public class FsNotification {
         preferenceIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
         PendingIntent preferencePendingIntent = PendingIntent.getActivity(context, 0, preferenceIntent, 0);
 
-        int priority = FsSettings.showNotificationIcon() ? Notification.PRIORITY_DEFAULT
-                : Notification.PRIORITY_MIN;
-
         String channelId = "be.ppareit.swiftp.notification.channelId";
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             CharSequence name = "Show FTP Server state";
@@ -108,7 +104,6 @@ public class FsNotification {
                 .setOngoing(true)
                 .setVisibility(NotificationCompat.VISIBILITY_PUBLIC)
                 .setCategory(NotificationCompat.CATEGORY_SERVICE)
-                .setPriority(priority)
                 .addAction(stopIcon, stopText, stopPendingIntent)
                 .addAction(preferenceIcon, preferenceText, preferencePendingIntent)
                 .setShowWhen(false)

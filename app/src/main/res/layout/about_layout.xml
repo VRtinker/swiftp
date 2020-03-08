@@ -164,6 +164,26 @@ along with SwiFTP.  If not, see <http://www.gnu.org/licenses/>.
                         android:layout_marginLeft="5dp"
                         android:text="@string/about_contributor_list" />
 
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/about_reconquest_title"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/about_reconquest_list" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:autoLink="web"
+                        android:text="@string/about_reconquest_url" />
+
                 </LinearLayout>
 
             </ScrollView>

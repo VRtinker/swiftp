@@ -21,16 +21,16 @@ along with SwiFTP.  If not, see <http://www.gnu.org/licenses/>.
 <resources>
 
     <string name="swiftp_name">FTP Server</string>
-    <string name="swiftp_name_free">FTP Server (Free)</string>
+    <string name="swiftp_name_free">FTP Server (ReconQuest Edition)</string>
     <string name="swiftp_name_demo">FTP Server (Demo)</string>
     <string name="running_label">FTP Server</string>
     <string name="running_summary_stopped">Toggle the state of the ftp server</string>
-    <string name="running_summary_started">at %s</string>
+    <string name="running_summary_started">Your Oculus Quest FTP Server can be accessed at %s</string>
     <string name="running_summary_failed">
-        Failed to start the FTP server, not connected to the local network (wifi or ethernet)?
+        Failed to start the FTP server. Check if WIFI is ON and if you can connect to any router
     </string>
     <string name="running_summary_failed_to_get_ip_address">
-        Failed to start the FTP server, unable to get IP address
+        The service is still enabled but the IP address was lost. Check if WIFI is still ON on your Oculus Quest
     </string>
 
     <string name="market_version_label">Market version</string>
@@ -154,6 +154,15 @@ https://github.com/ppareit/swiftp/issues .\n\n
         Timotheos Constambeys, chankruze, Waldemar Stoczkowski, Terry Hooper,
         Birgit Niemegeers
     </string>
+    <string name="about_reconquest_title">ReconQuest Edition</string>
+    <string name="about_reconquest_list" translatable="false">
+        This is a modified version of FTP Server to be used specifically on the Oculus Quest\nIf you have any issues
+        please notify the developer of ReconQuest!
+    </string>
+    <string name="about_reconquest_url" translatable="false">
+        https://github.com/VRtinker/ReconQuest
+    </string>
+
 
     <string name="app_theme">Theme...</string>
     <string name="dark_theme">Dark Theme</string>
